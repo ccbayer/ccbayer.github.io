@@ -1,0 +1,23 @@
+html, button, input, select, textarea { font-family: $font-family; }
+strong,
+a {
+	color: $orange;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted $orange;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&.no-border {
+		border: none !important;
+	}
+}
+
+h1,
+h2,
+h3 {
+	@include rosewood();
+}
