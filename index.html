@@ -1,0 +1,44 @@
+---
+title: Howdy, Stranger!
+introduction: I’m <strong>Colin Bayer</strong>, and I’m a front-end web developer in Portland, Oregon.
+layout: default
+---
+<div class="row">
+  <div class="col text-center">
+    <h1>About</h1>
+    <hr/>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 py-5 offset-md-1">
+  <p>I'm a lead front-end developer located in Portland, OR. I have over ten years of front-end experience, working with a variety of back-end and front-end platforms.  I have done work for clients big &amp; small in startup, small agency, and large agency environments. My work has been valued and recognized by account teams, clients, and other developers.  My approach is to take ownership of projects, ensure things are being done in an efficient and correct manner, and see delivery through to the end.  To me, the process is as important as the project.</p>
+  <p>I enjoy taking on new challenges and working with teams, and find I hit my stride in these scenarios.  I believe front end developer's role does not start and end with the technology stack or simply with delivering the product; a great developer is involved from the start to the end and can help in each project phase. Thusly, being involved in UX / design reviews, understanding the deployment process, and the user workflow are vitally important to me.</p>
+  <p>In my free time, I enjoy collecting records, hiking and biking, cooking, and a damn fine cup of coffee. </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 text-center">
+    <h1>Contact & Such</h1>
+    <hr/>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-sm-4">
+    <h3 class="text-center">Recent Projects</h3>
+    <ul>
+    {% for project in site.projects %}
+      <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="col-sm-4">
+    <h3 class="text-center">Portfolio</h3>
+    <p>Updated portfolio coming soon. For details on above projects, check out <a href="https://www.smalltalk.agency/work" target="_blank">the SmallTalk website.</a></p>
+    <p><a href="http://www.github.com/ccbayer">Code Samples &amp; etc on GitHub.</a></p>
+ </div>
+  <div class="col-sm-4">
+    <h3 class="text-center">Contact</h3>
+    <p>If you need to reach me, send an email to <a href="mailto:ccbayer@gmail.com">ccbayer@gmail.com</a>.</p>
+    <p>To connect professionally, visit me on <a href="https://www.linkedin.com/in/ccbayer" target="_blank">LinkedIn</a>. Please note that I do not often check my LinkedIn messages.</p>
+ </div>
+</div>

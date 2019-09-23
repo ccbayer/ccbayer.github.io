@@ -1,0 +1,23 @@
+// mixins
+@import 'global/mixins';
+
+// third party
+@import "bootstrap/scss/bootstrap";
+
+// global
+@import 'global/variables';
+@import 'global/global';
+@import 'global/buttons';
+@import 'global/typography';
+@import 'global/utilities';
+
+// layout
+@import 'components/header';
+@import 'components/site-header';
+@import 'components/footer';
+@import 'components/carousel';
+@import 'components/nav';
+
+// pages
+@import 'pages/default';
+@import 'pages/portfolio';

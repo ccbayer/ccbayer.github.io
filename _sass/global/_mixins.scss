@@ -1,0 +1,7 @@
+@mixin rosewood($color: null) {
+	font-family: 'rosewood-std-fill';
+	@if($color) {
+		color: $color;
+	}
+}
+

@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="/images/logo.png" alt="colin bayer" class="logo"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-1">{{page.title}}</h1>
+      </div>
+    </div>
+    {% if page.introduction %}
+    <div class="row justify-content-center panel">
+      <div class="col text-center">
+        <p class="lead py-5">{{page.introduction}}</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
