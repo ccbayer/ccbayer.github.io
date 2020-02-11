@@ -29,6 +29,7 @@ plugins:
 
 collections:
   - projects
+  - posts
 
 sass:
   sass_dir: _sass

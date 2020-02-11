@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	{% include site-header-bp.html %}
+	<div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {{ content }}
+            </div>
+            <div class="col-md-4 sidebar">
+                <div class="widget author-meta">
+                    <img src="/images/colin-headshot.jpg" alt="" class="rounded-circle img-responsive"/>
+                    <aside>
+                        <strong>Posted by:</strong> {{ page.author }} on {{ page.date | date: "%-d %B %Y" }}
+                    </aside>
+                </div>
+                <div class="widget tag-list">
+                    <h4>Tags</h4>
+                    <ul>
+                        {% for tags in page.tags %}
+                            <li>{{ tags }}</li>
+                        {% endfor %}
+                        </ul>
+                </div>
+                <div class="widget related-posts">
+                    <h4>Related Posts</h4>
+                </div>  
+                <div class="widget pagination">
+                    <div class="PageNavigation">
+                        {% if page.previous.url %}
+                            <strong>Previous Post</strong><br/>
+                            <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                        {% endif %}
+                        {% if page.next.url %}
+                            <strong>Next Post</strong><br/>
+                            <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                        {% endif %}
+                      </div>
+                </div>
+            </div>
+        </div>
+	</div> 
+	{% include footer.html %}
+</body>
+</html>
