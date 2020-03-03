@@ -1,8 +1,16 @@
 ---
+page_title: Home
 title: Howdy, Stranger!
-introduction: I’m <strong>Colin Bayer</strong>, and I’m a front-end web developer in Portland, Oregon.
+introduction: I’m <strong>Colin Bayer</strong>, and I’m a front-end web developer in<br/> <strong>Portland, Oregon.</strong>
 layout: default
 ---
+{% if page.introduction %}
+<div class="row justify-content-center panel offset-panel">
+  <div class="col-md-8 text-center">
+    <p class="lead py-5">{{page.introduction}}</p>
+  </div>
+</div>
+{% endif %}
 <div class="row">
   <div class="col text-center">
     <h1>About</h1>

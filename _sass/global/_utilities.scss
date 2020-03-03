@@ -1,3 +1,52 @@
 .color-orange {
 	color: $orange;
 }
+
+%gray-border,
+.gray-border {
+	border-radius: 0;
+    background: rgba($light-gray, .5);
+    border-bottom: 3px solid $mid-gray;
+}
+
+%orange-border,
+.orange-border {
+	border-radius: 0;
+    border-bottom: 3px solid $primary-400;
+}
+
+%shadow-inset,
+.shadow-inset {
+    box-shadow: inset 0 2px 0 hsla(0, 0, 100%, .15), inset 0 2px 4px 0 hsla(0, 0, 0, .2);
+}
+%shadow,
+.shadow {
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+}
+
+%shadow-hover,
+.shadow-hover {
+    box-shadow: 0 3px 6px hsla(0, 0%, 0%, .2);
+}
+
+.background-white {
+    background-color: $white;
+}
+
+%li-icon {
+    i {
+        display: inline-block;
+        margin-right: 5px;
+        color: $primary-700;
+    }
+}
+
+%highlight-link,
+.highlight-link {
+    color: $highlight-green;
+    border-color: $highlight-green;
+    &:hover {
+        color: $highlight-pink;
+        border-color: $highlight-pink;
+    }  
+}

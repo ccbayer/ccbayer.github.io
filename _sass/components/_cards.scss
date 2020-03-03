@@ -1,0 +1,43 @@
+.card {
+    // general cards
+    
+    // post cards
+    &.post-card {
+        @extend %shadow-inset;
+        border: none;
+        background: $grey-900-hsla;
+        cursor: pointer;
+        .card-img-top-link {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            height: 140px;
+            width: 100%;
+            display: block;
+            background-repeat: repeat;
+        }
+        .card-img-top {
+            height: 140px;
+            object-fit: cover;
+            object-position: center;
+            a {
+                border: none;
+            }
+            &.default {
+                object-fit: fill;
+            }
+        }
+        .card-title {
+            small {
+                display: block;
+                font-weight: 100;
+                font-size: 1rem;
+                margin-bottom: .5rem;
+            }
+            margin-bottom: 1rem;
+        }
+        .card-text {
+            font-size: 1rem;
+            color: $black;
+        }
+    }
+}

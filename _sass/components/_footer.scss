@@ -1,6 +1,39 @@
 footer {
-	border-top: 1px solid #eee;
+	border-top: 3px solid $primary-400;
+	background: rgba($light-gray, .5);
+	background-color: #DFDBE5;
+	background-image: url('/images/topography.svg');
 	padding-top: 15px;
 	margin-top: 15px;
+	padding-bottom: 30px;
+	ul.contact.nav {
+		li {
+			a { 
+				height: 30px;
+				width: 30px;
+				padding: 0;
+				border: none;
+				background: $primary-300;
+				color: $white;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 30px;
+				&:hover {
+					background: $primary-100;
+					color: $primary-900;
+				}
+			}
+			margin-left: 30px;
+		}
+	}
+	ul.footer-nav {
+		padding: .5rem 0;
+		li {
+			a.nav-link {
+				padding: 0;
+				font-size: .875rem;
+			}
+		}
+	}
 }
 

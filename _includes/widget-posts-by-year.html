@@ -1,0 +1,16 @@
+{% assign postsByYear =
+    site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+<div class="widget date-list">
+{% for year in postsByYear %}
+  <h4>Posts in <a href="/blog/{{ year.name }}">{{ year.name }}</a></h4>
+    <ul>
+      {% for post in year.items %}
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <small>{{ post.date | date: "%-d %B %Y" }}</small><br/>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+{% endfor %}
+</div>

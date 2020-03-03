@@ -1,0 +1,23 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-between">
+  {% if page.previous.url %}
+    <li class="page-item">
+      <a href="{{page.previous.url}}">&laquo; Previous</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled">
+      <a href="#" tabindex="-1">&laquo; Previous</a>
+    </li>
+  {% endif %}
+    <li class="page-item">{{ page.title }}</li>
+  {% if page.next.url %}
+    <li class="page-item">
+      <a href="{{page.next.url}}">Next &raquo;</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled">
+      <a href="#" tabindex="-1">Next &raquo;</a>
+    </li>
+  {% endif %}
+  </ul>
+</nav>

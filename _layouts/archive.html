@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	{% include site-header-bp.html %}
+	<div class="container">
+    <div class="row">
+      <h1>
+      {% if page.type contains 'year' %}
+      Archive of posts from {{ page.date | date: "%Y" }}
+      {% elsif page.type contains 'month' %}
+      Archive of posts from {{ page.date | date: "%B %Y" }}
+      {% elsif page.type contains 'day' %}
+      Archive of posts from {{ page.date | date: "%B %-d, %Y" }}
+      {% else %}
+      <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+      {% endif %}
+      </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        {% for post in page.posts %}
+        <div class="col-md-6">
+          {% include post-card.html %}
+        </div>
+      {% endfor %}
+      </div>
+      <div class="col-md-4 sidebar">
+          {% include widget-posts-by-year.html %}
+      </div>
+    </div>
+  </div>
+	{% include footer.html %}
+</body>
+</html>

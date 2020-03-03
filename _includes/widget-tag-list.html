@@ -1,0 +1,12 @@
+{% if page.tags %}
+<div class="widget tag-list">
+    <h4>Tags</h4>
+    <ul>
+    {% for tags in page.tags %}
+        <li>
+            <a href="/tag/{{tags}}">#{{ tags }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}

@@ -1,7 +1,48 @@
 <footer>
 	<div class="container">
-		<div class="row">
-			<p class="text-center">&copy; colin bayer {{ site.time | date: '%Y' }}</p>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="nav footer-nav justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">
+              Blog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/portfolio">
+              Portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+		<div class="row justify-content-md-between">
+      <div class="col-md-6">
+        <p class="text-center text-md-left"><small>&copy; Colin Bayer {{ site.time | date: '%Y' }}. All Rights Reserved.</small></p></div>
+      <div class="col-md-6">
+        <ul class="contact nav justify-content-center justify-content-md-end">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.linkedin }}">
+              <span class="fab fa-linkedin"><span class="sr-only">LinkedIn</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.github.com/{{ site.github_username }}">
+              <span class="fab fa-github"><span class="sr-only">Github</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="mailto:{{ site.email }}">
+              <span class="fal fa-envelope"><span class="sr-only">Github</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
 		</div>
 	</div>
 </footer>
