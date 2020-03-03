@@ -12,14 +12,23 @@
 @import 'global/utilities';
 
 // layout
+@import 'components/breadcrumb';
+@import 'components/cards';
+@import 'components/carousel';
+@import 'components/footer';
 @import 'components/header';
-@import 'components/author-meta';
+@import 'components/jumbotron';
+@import 'components/nav';
+@import 'components/pagination';
+@import 'components/panel';
 @import 'components/sidebar';
 @import 'components/site-header';
-@import 'components/footer';
-@import 'components/carousel';
-@import 'components/nav';
+// widgets
+@import 'components/widget-author';
+@import 'components/widget-tag-list';
+@import 'components/widget-date-list';
 
 // pages
 @import 'pages/default';
+@import 'pages/post';
 @import 'pages/portfolio';

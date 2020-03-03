@@ -5,12 +5,15 @@ date:   2018-04-18 12:00:00 -0700
 original: https://www.smalltalk.agency/perspectives/blogs/creating-style-guides-pt-1
 categories: posts
 author: Colin Bayer
+thumbnail: "/images/posts/2018/04/12/post-thumbnail.jpg"
+excerpt: "We explore the use of style guides and how they can help in all aspects and phases of a digital project by minimizing ambiguity and setting definable parameters that can be validated and tested against."
+category: development
 tags: [front-end, styleguides, development]
 excerpt_separator: <!--more-->
 ---
 
 {% if page.original %}
-<p><i>This post was originally posted on <a href="{{ post.original }}" target="_blank">SmallTalk's website.</a></i></p>
+<p><i>This post was originally posted on <a href="{{ page.original }}" target="_blank">SmallTalk's website.</a></i></p>
 {% endif %}
 
 <p>Today's post is a two-parter. In this post, we are exploring the use of style guides and how they can help in all aspects and phases of a digital project by minimizing ambiguity and setting definable parameters that can be validated and tested against. A good style guide will help reduce hours spent by all parties throughout the phases of the project. In a future post, we'll take a look at some examples of style guides, what works about them, and explore some tools that can help the creation of these guides.</p>
@@ -41,7 +44,7 @@ excerpt_separator: <!--more-->
 
 <figure>
     <img alt="from Barricade's style guide" class="img-fluid" src="/images/posts/2018/04/12/styleguide-barricade.png"><br>
-    <figcaption>Via <a rel="noopener noreferrer" href="https://styleguide.barricade.io/styles.html" target="_blank">Barricade</figcaption>
+    <figcaption>Via <a rel="noopener noreferrer" href="https://styleguide.barricade.io/styles.html" target="_blank">Barricade</a></figcaption>
 </figure>
 
 <p>Developers love specification and requirements (maybe not actually _writing_ them, but that's another topic). By putting rules and definitions behind everything from how the user is supposed to interact with something on screen to the way the layout changes at a particular breakpoint, a specification can be met - and tested against.  These requirements become the acceptance criteria that define whether the task was completed or not.</p>

@@ -10,14 +10,34 @@ a {
 	&:hover,
 	&:focus {
 		text-decoration: none;
+		color: $blue;
+		border-bottom-color: $blue;
 	}
 	&.no-border {
 		border: none !important;
 	}
 }
 
-h1,
-h2,
-h3 {
-	@include rosewood();
+
+main {
+	margin-top: 80px;
+	padding-bottom: 80px;
+}
+
+body {
+	background: $body-bg;
+}
+
+code,
+pre {
+	background-color: $gray-100-hsla;
+	color: $highlight-green;
+	padding: .25rem;
+	&.highlighter-rouge {
+		color: $highlight-pink;
+	}
+}
+
+pre {
+	padding: .5rem;
 }

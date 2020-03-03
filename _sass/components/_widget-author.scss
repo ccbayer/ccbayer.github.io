@@ -1,0 +1,21 @@
+.author-meta {
+    background: $white;
+    @extend %orange-border;
+    @extend %shadow;
+    img {
+        margin-top: -30px;
+        border: 4px solid $white;
+        width: 100%;
+        max-width: 100px;
+        margin-right: 15px;
+    }
+    aside {
+        font-weight: 100;
+        font-size: .875rem;
+        flex: 0 1 auto;
+        color: $gray-100-hsla;
+        div {
+            color: $gray-100-hsla;
+        }
+    }
+}

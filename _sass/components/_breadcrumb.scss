@@ -1,0 +1,24 @@
+.breadcrumb {
+    background: transparent;
+    border-radius: 0;
+    padding-bottom: 0;
+    padding-top: 1rem;
+    .breadcrumb-item {
+        font-weight: 400;
+        color: $primary-500;
+        a {
+            font-weight: 100;
+            color: $primary-300;
+            border-bottom-color: $white;
+            &:hover {
+                color: $blue;
+                border-bottom-color: $blue;
+            }
+        }
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: $primary-300;
+        font-weight: 100;
+    }
+    
+}

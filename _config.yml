@@ -13,23 +13,49 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: colin bayer // web developer // portland, or
+title: colin bayer - Web Developer in Portland, OR
 email: ccbayer@gmail.com
 description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://colinbayer.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ccbayer
 github_username:  ccbayer
+linkedin: https://www.linkedin.com/in/ccbayer
+
+# defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      post_thumbnail: "/images/plaid-swatch.svg"
+
+# collections
+collections:
+  - projects
+  - posts
+
+# permalink settings
+permalink: /blog/:year/:month/:day/:title
+
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
-collections:
-  - projects
-  - posts
+# archive settings
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    day: '/blog/:year/:month/:day/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
 sass:
   sass_dir: _sass
