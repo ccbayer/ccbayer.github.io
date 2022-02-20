@@ -9,6 +9,7 @@
 			size: cover;
 			repeat: no-repeat;
 			position: center center;
+      blend-mode: overlay;
 		}
 	}
 	@include media-breakpoint-up(sm) {
@@ -29,6 +30,6 @@
 		}
 	}
 	.panel {
-		background-color: rgba($white,.7);
+		background-color: rgba($white,.9);
 	}
 }
