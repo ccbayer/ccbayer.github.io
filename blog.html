@@ -1,0 +1,14 @@
+---
+title: Blog
+layout: secondary
+---
+
+<div class="container">
+    <div class="row">
+        {% for post in site.posts %}
+        <div class="col-md-6">
+            {% include post-card.html %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

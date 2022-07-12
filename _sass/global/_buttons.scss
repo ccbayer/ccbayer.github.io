@@ -1,1 +1,15 @@
-
+.btn {
+    border-radius: 2px;
+    &.btn-primary {
+        background-color: $orange;
+        border: none;
+        &:hover {
+            background-color: $primary-200;
+        }
+    }
+    &.btn-secondary {
+        color: $orange;
+        background-color: transparent;
+        border: 1px solid $primary-400;
+    }
+}

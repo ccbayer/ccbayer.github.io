@@ -1,6 +1,7 @@
 ---
 title: SAFEbuilt
 link: https://safebuilt.com
-year: 2018
+description: Custom WordPress theme for a Community Transformation Services company.
+date: 2019-10-01 12:00:00 -0700
+active: true
 ---
-Custom WordPress theme for a Community Transformation Services company.

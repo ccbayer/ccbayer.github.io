@@ -1,0 +1,16 @@
+{% assign projectsByYear =
+    site.projects | group_by_exp: "project", "project.date | date: '%Y'" %}
+<div class="widget date-list">
+{% for year in projectsByYear %}
+  <h4>Projects in {{ year.name }}</h4>
+    <ul>
+      {% for project in year.items %}
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+            <p><small>{{ project.description }}</small></p>
+        </li>
+      {% endfor %}
+    </ul>
+{% endfor %}
+</div>

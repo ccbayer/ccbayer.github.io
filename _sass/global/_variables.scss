@@ -1,12 +1,70 @@
 // colors
-$white: #FFF;
+$white: #fffdfa;
 $black: #3c3c3c; 
-$orange: #de7045;
+$light-gray: #e3e3e3;
+$mid-gray: #999;
+$dark-gray: #666;
+$blue: #0056b3;
+
+$body-bg: $white;
+
+/* brand colors */
+/* primary */ 
+
+$primary-100-hex: #57312D;
+$primary-100-hsla: hsla(6, 32%, 26%, 1);
+
+$primary-200-hex: #AB370A;
+$primary-200-hsla: hsla(17, 89%, 35%, 1);
+$primary-300-hex: #D64D17; 
+$primary-300-hsla: hsla(17, 80%, 46%, 1);
+
+$primary-400-hex: #D06237;
+$primary-400-hsla: hsla(17, 62%, 51%, 1);
+
+$primary-500-hex: #EA8454;
+$primary-500-hsla: hsla(19, 78%, 57%, 1);
+
+$primary-600-hex: #eb9675;
+$primary-600-hsla: hsla(17, 75%, 69%, 1);
+
+$primary-700-hex: #F0B299;
+$primary-700-hsla: hsla(17, 75%, 77%, 1);
+
+$primary-800-hex: #F7CFC0;
+$primary-800-hsla: hsla(17, 76%, 86%, 1);
+
+$primary-900-hex: #FAEBE4;
+$primary-900-hsla: hsla(17, 69%, 94%, 1);
+
+$primary-100: $primary-100-hsla;
+$primary-200: $primary-200-hsla;
+$primary-300: $primary-300-hsla;
+$primary-400: $primary-400-hsla;
+$primary-500: $primary-500-hsla;
+$primary-600: $primary-600-hsla;
+$primary-700: $primary-700-hsla;
+$primary-800: $primary-800-hsla;
+$primary-900: $primary-900-hsla;
+$orange: $primary-500;
+
+// warm grays
+$gray-100-hsla: hsla(17, 15%, 16%, 1);
+$gray-300-hsla: hsla(17, 10%, 15%, 1);
+$gray-400-hsla: hsla(17, 7%, 20%, 1);
+$gray-500-hsla: hsla(17, 5%, 40%, 1);
+$grey-700-hsla: hsla(17, 24%, 85%, 1);
+$grey-900-hsla: hsla(17, 24%, 97%, 1);
+
+// highlights
+$highlight-green: hsla(69, 100%, 40%, 1);
+$highlight-pink: hsla(308, 100%, 67%, 1);
 
 //fonts
-$font-family: "Helvetica", "Verdana", sans-serif;
-$font-color: $black;
-
+$font-family: 'Open Sans', ;
+$font-family-base: $font-family;
+$font-color: $gray-500-hsla;
+$headline-color: $gray-300-hsla;
 
 // breakpoints
 $break-lg: 1200px;

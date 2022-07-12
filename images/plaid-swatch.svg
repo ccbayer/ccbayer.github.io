@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Plaid Swatch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="150" height="150"></rect>
+    </defs>
+    <g id="Plaid-Swatch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plaid-Pattern">
+            <g id="pattern">
+                <g id="lines">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#DE7045" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" id="lines-upper-left-copy" stroke-linecap="square">
+                        <g transform="translate(-0.498339, -71.262458)">
+                            <g transform="translate(0.247508, -0.001661)">
+                                <g id="Group" transform="translate(0.001661, 71.014950)" stroke="#7F2C0C" stroke-width="2">
+                                    <line x1="3.74750831" y1="217.016611" x2="153.747508" y2="67.5149502" id="Line-Copy"></line>
+                                    <line x1="3.74750831" y1="211.534884" x2="153.747508" y2="62.0332226" id="Line-Copy-2"></line>
+                                    <line x1="3.74750831" y1="206.053156" x2="153.747508" y2="56.551495" id="Line-Copy-3"></line>
+                                    <line x1="3.74750831" y1="200.571429" x2="153.747508" y2="51.0697674" id="Line-Copy-4"></line>
+                                    <line x1="3.74750831" y1="195.089701" x2="153.747508" y2="45.5880399" id="Line-Copy-5"></line>
+                                    <line x1="3.74750831" y1="189.607973" x2="153.747508" y2="40.1063123" id="Line-Copy-6"></line>
+                                    <line x1="3.74750831" y1="184.126246" x2="153.747508" y2="34.6245847" id="Line-Copy-7"></line>
+                                    <line x1="3.74750831" y1="178.644518" x2="153.747508" y2="29.1428571" id="Line-Copy-8"></line>
+                                    <line x1="3.74750831" y1="173.162791" x2="153.747508" y2="23.6611296" id="Line-Copy-9"></line>
+                                    <line x1="3.74750831" y1="167.681063" x2="153.747508" y2="18.179402" id="Line-Copy-10"></line>
+                                    <line x1="3.74750831" y1="162.199336" x2="153.747508" y2="12.6976744" id="Line-Copy-11"></line>
+                                    <line x1="3.74750831" y1="156.717608" x2="153.747508" y2="7.21594684" id="Line-Copy-12"></line>
+                                    <line x1="3.74750831" y1="151.23588" x2="153.747508" y2="1.73421927" id="Line-Copy-13"></line>
+                                    <line x1="0.249169435" y1="149.750831" x2="150.249169" y2="0.249169435" id="Line"></line>
+                                </g>
+                                <line x1="0.250830565" y1="215.533223" x2="150.250831" y2="66.0315615" id="Line-Copy" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="210.051495" x2="150.250831" y2="60.5498339" id="Line-Copy-2" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="204.569767" x2="150.250831" y2="55.0681063" id="Line-Copy-3" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="199.08804" x2="150.250831" y2="49.5863787" id="Line-Copy-4" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="193.606312" x2="150.250831" y2="44.1046512" id="Line-Copy-5" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="188.124585" x2="150.250831" y2="38.6229236" id="Line-Copy-6" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="182.642857" x2="150.250831" y2="33.141196" id="Line-Copy-7" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="177.16113" x2="150.250831" y2="27.6594684" id="Line-Copy-8" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="171.679402" x2="150.250831" y2="22.1777409" id="Line-Copy-9" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="166.197674" x2="150.250831" y2="16.6960133" id="Line-Copy-10" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="160.715947" x2="150.250831" y2="11.2142857" id="Line-Copy-11" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="155.234219" x2="150.250831" y2="5.73255814" id="Line-Copy-12" stroke="#7F2C0C" stroke-width="2"></line>
+                                <line x1="0.250830565" y1="149.752492" x2="150.250831" y2="0.250830565" id="Line-Copy-13" stroke="#7F2C0C" stroke-width="2"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#57312D" x="-1.94289029e-16" y="0" width="75" height="75"></rect>
+                <rect id="Rectangle-Copy" fill="#DE7045" x="75" y="75" width="75" height="75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

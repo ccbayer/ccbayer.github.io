@@ -1,0 +1,49 @@
+body.page-post {
+    main {
+        article {
+            padding: 0 20px 0 0;
+            h2,
+            h3 {
+                font-family: $font-family-base;
+                margin: 1.5rem 0;
+            }
+            h2 {
+                color: $gray-300-hsla;
+                font-size: 1.75rem;
+                font-weight: 400;
+            }
+            h3 {
+                color: $gray-300-hsla;
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+            ul {
+                padding: 1.25rem 0 2.5rem 1rem;
+            }
+            li {
+                font-weight: 100;
+                padding-bottom: 1rem;
+            }
+            p {
+                font-size: 1.125rem;
+                line-height: 1.5;
+            }
+        }
+        figure {
+            @extend %shadow;
+            border-radius: .5rem;
+        }
+        figcaption {
+            border-top: 3px solid $primary-700;
+            font-weight: 100;
+            font-style: italic;
+            font-size: .875rem;
+            background: $gray-100-hsla;
+            color: $highlight-green;
+            padding: .5rem;
+            a {
+                @extend %highlight-link;
+            }
+        }
+    }
+}

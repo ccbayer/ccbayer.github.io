@@ -1,8 +1,16 @@
 ---
+page_title: Home
 title: Howdy, Stranger!
-introduction: I’m <strong>Colin Bayer</strong>, and I’m a front-end web developer in Portland, Oregon.
+introduction: I’m <strong>Colin Bayer</strong>, and I’m a front-end web developer in<br/> <strong>Portland, Oregon.</strong>
 layout: default
 ---
+{% if page.introduction %}
+<div class="row justify-content-center panel offset-panel">
+  <div class="col-md-8 text-center">
+    <p class="lead py-5">{{page.introduction}}</p>
+  </div>
+</div>
+{% endif %}
 <div class="row">
   <div class="col text-center">
     <h2>About</h2>
@@ -26,22 +34,24 @@ layout: default
 </div>
 <div class="row mt-3">
   <div class="col-sm-4">
-    <h2 class="text-center">Recent Projects</h2>
-    <ul>
-    {% for project in site.projects reversed %}
-      {% if project.year > 2019 %}
-      <li><a href="{{ project.link }}" target="_blank">{{ project.year}}: {{ project.title }}</a></li>
+    <h2>Recent Projects</h2>
+    <ul class="list-group mb-4">
+    {% assign items = site.projects | sort: 'date' | reverse %}
+    {% for project in items limit:3 %}
+      {% if project.active %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="{{ project.link }}" target="_blank">
+          {{ project.title }}
+        </a>
+        <span class="badge badge-dark">{{ project.date | date: '%Y'}}</span>
+      </li>
       {% endif %}
     {% endfor %}
     </ul>
-  </div>
-  <div class="col-sm-4">
-    <h2 class="text-center">Portfolio</h2>
-    <p>Updated portfolio coming soon. For details on above projects, check out <a href="https://www.ampagency.com/san-francisco-marketing-agency" target="_blank">the AMP XD website.</a></p>
-    <p><a href="http://www.github.com/ccbayer">Code Samples &amp; etc on GitHub.</a></p>
- </div>
-  <div class="col-sm-4">
-    <h2 class="text-center">Contact</h2>
+    <a href="./portfolio.html" class="btn btn-primary">See All</a>
+  </div> 
+  <div class="col-sm-4 offset-sm-4">
+    <h2>Contact</h2>
     <p>If you need to reach me, send an email to <a href="mailto:ccbayer@gmail.com">ccbayer@gmail.com</a>.</p>
     <p>To connect professionally, visit me on <a href="https://www.linkedin.com/in/ccbayer" target="_blank">LinkedIn</a>. Please note that I do not often check my LinkedIn messages.</p>
  </div>

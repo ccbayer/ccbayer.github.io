@@ -1,0 +1,39 @@
+.jumbotron {
+    background-color: $primary-400;
+    position: relative;
+	a {
+		display: none;
+		@include media-breakpoint-up(md) {
+			display: inline;
+		}
+	}
+    .logo {
+        position: sticky;
+        top: 0;
+    }
+	@include media-breakpoint-up(md) {
+		background: {
+			image: url('/images/fremont.jpg');
+			size: cover;
+			repeat: no-repeat;
+			position: center center;
+		}
+	}
+	@include media-breakpoint-up(sm) {
+		margin-top: 0;
+		padding-top: 0;
+	}	
+	.container {
+		color: $black;
+		h1 {
+			@include rosewood($orange);
+			font-weight: 100;
+			text-shadow: 3px 3px 0 $primary-100;
+			@include media-breakpoint-up(sm) {
+				padding-top: 48px;
+				background-position: center top;
+				background-size: contain;	
+			}
+		}
+	}
+}

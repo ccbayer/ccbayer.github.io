@@ -1,0 +1,9 @@
+.list-group {
+    .list-group-item {
+        border: none;
+        border-radius: 0;
+        &:nth-of-type(2n) {
+            background: $light-gray;
+        }
+    }
+}

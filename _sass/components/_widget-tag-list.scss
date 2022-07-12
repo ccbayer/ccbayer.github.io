@@ -1,0 +1,18 @@
+.widget.tag-list {
+    h4 {
+        width: 100%;
+    }
+    ul {
+        li {
+            display: inline-block;
+            background: $gray-100-hsla;
+            padding: 5px;
+            margin: 10px 10px 5px 0;
+            border-radius: 5%;
+            font-weight: 100;
+            a {
+                @extend %highlight-link;
+            }
+        }
+    }
+}
