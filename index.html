@@ -34,10 +34,13 @@ layout: default
   <div class="col-sm-4">
     <h3 class="text-center">Recent Projects</h3>
     <ul>
-    {% for project in site.projects %}
+    {% for project in site.projects reversed limit:3 %}
+      {% if project.active %}
       <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
+      {% endif %}
     {% endfor %}
     </ul>
+    <a href="./portfolio.html">See All</a>
   </div>
   <div class="col-sm-4">
     <h3 class="text-center">Portfolio</h3>

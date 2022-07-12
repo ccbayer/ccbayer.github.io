@@ -5,11 +5,11 @@
     padding-top: 1rem;
     .breadcrumb-item {
         font-weight: 400;
-        color: $primary-500;
+        color: $primary-200;
         a {
-            font-weight: 100;
-            color: $primary-300;
-            border-bottom-color: $white;
+            font-weight: 300;
+            color: $primary-200;
+            border-bottom-color: $primary-200;
             &:hover {
                 color: $blue;
                 border-bottom-color: $blue;
