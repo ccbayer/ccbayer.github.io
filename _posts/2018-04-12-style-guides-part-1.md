@@ -8,7 +8,7 @@ author: Colin Bayer
 thumbnail: "/images/posts/2018/04/12/post-thumbnail.jpg"
 excerpt: "We explore the use of style guides and how they can help in all aspects and phases of a digital project by minimizing ambiguity and setting definable parameters that can be validated and tested against."
 category: development
-tags: [front-end, styleguides, development]
+tags: [front-end, styleguides, development, smalltalk]
 excerpt_separator: <!--more-->
 ---
 
