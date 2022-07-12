@@ -1,0 +1,17 @@
+---
+title: Portfolio
+layout: projects
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Coming soon</h2>
+            <ul>
+                {% for project in site.projects reversed %}
+                  <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
