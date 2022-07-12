@@ -6,7 +6,9 @@
     <ul>
       {% for project in year.items %}
         <li>
-            <a href="{{ project.link }}" title="_blank">{{ project.title }}</a>
+            <i class="fas fa-caret-right"></i>
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+            <p><small>{{ project.description }}</small></p>
         </li>
       {% endfor %}
     </ul>

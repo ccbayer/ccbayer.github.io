@@ -2,6 +2,6 @@
 title: Second Measure
 link: https://www.secondmeasure.com
 description: Custom WordPress template for a data-analytics firm.
-year: 2019
+date: 2019-06-01 12:00:00 -0700
 active: true
 ---
