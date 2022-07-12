@@ -1,8 +1,18 @@
 {% assign projectsByYear =
     site.projects | group_by_exp: "project", "project.date | date: '%Y'" | reverse %}
-<div class="widget date-list">
+<div class="widget date-list" x-data="{ currentYear: 2022 }">
+  <div class="col-12">
+    <div class="form-group">
+      <label for="year">Filter projects by Year:</label>
+      <select name="year" id="year" class="form-control form-control-sm" x-model="currentYear">
+        {% for year in projectsByYear %}
+        <option>{{ year.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
 {% for year in projectsByYear %}
-  <div class="col-md-6">
+  <div class="col" x-show="currentYear == {{ year.name }}">
     <h4>Projects in {{ year.name }}</h4>
       <ul>
         {% for project in year.items %}
