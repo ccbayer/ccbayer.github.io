@@ -18,7 +18,11 @@
         {% for project in year.items %}
           <li>
               <i class="fas fa-caret-right"></i>
+              {% if project.active %}
               <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+              {% else %}
+                {{ project.title }}
+              {% endif %}
               <p><small>{{ project.description }}</small></p>
           </li>
         {% endfor %}
