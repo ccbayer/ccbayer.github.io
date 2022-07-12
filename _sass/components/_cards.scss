@@ -6,6 +6,7 @@
         @extend %shadow-inset;
         border: none;
         background: $grey-900-hsla;
+        height: 100%;
         cursor: pointer;
         .card-img-top-link {
             border-top-left-radius: .25rem;
