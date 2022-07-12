@@ -24,7 +24,9 @@
 @import 'components/panel';
 @import 'components/sidebar';
 @import 'components/site-header';
+
 // widgets
+@import 'components/widget-base';
 @import 'components/widget-author';
 @import 'components/widget-tag-list';
 @import 'components/widget-date-list';
