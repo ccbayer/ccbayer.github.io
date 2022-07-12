@@ -1,0 +1,16 @@
+<div class="widget tag-list">
+    <h4>All Tags</h4>
+    <ul>
+        {% assign tags =  site.posts | map: 'tags' | join: ','  | split: ',' | uniq %}
+        {% for tags in tags %}
+            <li>
+                
+                {% if page.title != tags %}
+                    <a href="/blog/tag/{{tags}}">#{{ tags }}</a>
+                {% else %}
+                    <span>#{{ tags }}</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
