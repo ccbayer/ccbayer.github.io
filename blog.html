@@ -9,9 +9,72 @@ layout: secondary
     </div>
 </div>
 <div class="row">
+  <div class="col">
+      <form action="" class="py-2 mb-2">
+        <div class="form-group">
+          <label for="search"><strong>Search a title, topic, tag</strong></label>
+          <input type="search" class="form-control" name="search" id="search" placeholder="Search blog posts...">
+          <ul class="suggestions list-group">
+            <li class="list-group-item"></li>
+          </ul>
+        </div>
+      </form>
+  </div>
+</div>
+<div class="row">
     {% for post in site.posts %}
     <div class="col-md-6 mb-4">
         {% include post-card.html %}
     </div>
     {% endfor %}
 </div>
+
+<script>
+  const endpoint = '/api/posts.json';
+  const posts = [];
+  fetch(endpoint)
+    .then(blob => blob.json())
+    .then(data => posts.push(...data));
+  const searchInput = document.getElementById('search');
+  const suggestions = document.querySelector('.suggestions');
+
+  function findMatches(wordToMatch, posts) {
+    return posts.filter(post => {
+      // here we need to figure out if the post's title, exceerpt or tag matches what was searched
+      const regex = new RegExp(wordToMatch, 'gi');
+      return post.title.match(regex) || post.excerpt.match(regex) || post.tags?.filter(tag => tag.match(regex)).length
+    });
+  }
+  
+  function displayMatches() {
+  const matchArray = findMatches(this.value, posts);
+  if(this.value.length) {
+    const html = matchArray.map(post => {
+      const regex = new RegExp(this.value, 'gi');
+      const title = post.title.replace(regex, `<span class="text-info">${this.value}</span>`);
+      const excerpt = post.excerpt.replace(regex, `<span class="text-info">${this.value}</span>`);
+      const tags = post.tags.join(', ').replace(regex, `<span class="text-info">${this.value}</span>`);
+      return `
+        <li class="list-group">
+          <a href="${post.url}">
+            <h5 class="title">${title}</h5>
+            <span class="excerpt">${excerpt}</span>
+            <div class="taglist">Tags: ${tags}</div>
+          </a>
+        </li>
+      `;
+    }).join('');
+      if(html) {
+        suggestions.innerHTML = html;
+      } else {
+        suggestions.innerHTML = '<li class="list-group">No matches for <span class="text-info">' + this.value + '</span></li>';
+      }
+    } else {
+      suggestions.innerHTML = `<li class="list-group"></li>`;
+    }
+}
+  
+  searchInput.addEventListener('change', displayMatches);
+  searchInput.addEventListener('keyup', displayMatches);
+  
+  </script>
