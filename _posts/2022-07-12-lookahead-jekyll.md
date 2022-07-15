@@ -308,3 +308,5 @@ The final results are below - all and all, not bad for 50 lines of code that sho
   
   </script>
   ```
+
+Massive credit due to <a href="https://wesbos.com" target="_blank">Wes Bos</a>, who wrote the lookahead functionality in his excellent <a href="https://javascript30.com/" target="_blank">JavaScript in 30 days course</a>. I used that for the majority of the lookahad functionality here, and modified it slightly to work with my dom structure and the different data source, as well as the tag array.
