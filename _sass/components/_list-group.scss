@@ -6,4 +6,22 @@
             background: $light-gray;
         }
     }
+    &.suggestions {
+      transition: all .5s ease-in-out;
+      z-index: 10;
+      li {
+        display: block;
+        padding: .5rem;
+        margin-bottom: .5rem;
+      }
+    }
+}
+
+#serach:placeholder-shown + ul.suggestions {
+  max-height: 0;
+}
+#search:not(:placeholder-shown) + ul.suggestions {
+  margin-bottom: .75rem;
+  max-height: none;
+  border-bottom: 1px solid $grey-700-hsla;
 }
