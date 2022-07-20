@@ -1,0 +1,29 @@
+---
+title: Sandbox
+layout: secondary
+sidebar: false
+---
+
+<div class="row">
+    <div class="col">
+        <p>Dribs and drabs, mini-projects and resources.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <ul class="list-group sandbox">
+        {% for sb in site.sandbox %}
+            <li class="list-group-item">
+                <h3>{{ sb.title }}</h3>
+                <p>{{ sb.description }}</p>
+                <div class="d-flex justify-content-between">
+                    <a href="{{ sb.url }}">Visit {{ sb.title }}</a>
+                    {% if sb.blog %}
+                    <a href="/blog/{{sb.blog}}">Read about {{ sb.title }}</a>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

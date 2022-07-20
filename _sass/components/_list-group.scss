@@ -15,6 +15,18 @@
         margin-bottom: .5rem;
       }
     }
+    &.sandbox {
+      li {
+        h3 {
+          @include rosewood();
+          color: $headline-color;
+        }
+        margin-bottom: 1.5rem;
+        background: $primary-900-hex;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    }
 }
 
 #serach:placeholder-shown + ul.suggestions {

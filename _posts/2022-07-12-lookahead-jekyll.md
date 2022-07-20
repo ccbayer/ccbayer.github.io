@@ -4,7 +4,6 @@ title:  "Creating a pseudo-search lookahead function with JS and Jekyll"
 date:   2022-07-12 12:00:00 -0700
 categories: posts
 author: Colin Bayer
-thumbnail: "/images/posts/2022/07/12/post-thumbnail.jpg"
 excerpt: "Making a static site seem less static with some fun JS"
 category: development
 tags: [jekyll, development, javascript]
