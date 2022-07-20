@@ -17,7 +17,7 @@ blog: 2022/07/16/coffee-time
         <div class="col-12 mb-2">
             <label for="coffee">I have this much Coffee</label>
             <div class="input-group">
-                <input name="coffee" id="coffee" type="number" class="form-control" x-model="coffee" x-on:change="updateAmts">
+                <input name="coffee" id="coffee" type="number" pattern="\d*" class="form-control" x-model="coffee" x-on:change="updateAmts">
                 <div class="input-group-append">
                     <span class="input-group-text">g</span>
                 </div>
