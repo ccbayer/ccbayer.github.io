@@ -11,12 +11,17 @@ sidebar: false
 </div>
 <div class="row">
     <div class="col">
-        <ul>
+        <ul class="list-group sandbox">
         {% for sb in site.sandbox %}
-            <li>
+            <li class="list-group-item">
                 <h3>{{ sb.title }}</h3>
-                <a href="{{ sb.url }}">Visit {{ sb.title }}</a> | 
-                <a href="/blog/{{sb.blog}}">Read about {{ sb.title }}</a>
+                <p>{{ sb.description }}</p>
+                <div class="d-flex justify-content-between">
+                    <a href="{{ sb.url }}">Visit {{ sb.title }}</a>
+                    {% if sb.blog %}
+                    <a href="/blog/{{sb.blog}}">Read about {{ sb.title }}</a>
+                    {% endif %}
+                </div>
             </li>
         {% endfor %}
         </ul>
