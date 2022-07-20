@@ -4,6 +4,7 @@
     // post cards
     &.post-card {
         @extend %shadow-inset;
+        transition: all 0.3s ease-in-out;
         border: none;
         background: $grey-900-hsla;
         height: 100%;
@@ -15,11 +16,20 @@
             width: 100%;
             display: block;
             background-repeat: repeat;
+            overflow: hidden;
+            border-bottom: 0;
+            transition: height 0.3s ease-in-out;
+        }
+        h5,
+        .card-text p {
+            transition: all 0.3s ease-in-out;
         }
         .card-img-top {
-            height: 140px;
+            height: 100%;
+            width: 100%;
             object-fit: cover;
             object-position: center;
+            transition: all 0.3s ease-in-out;
             a {
                 border: none;
             }
@@ -39,6 +49,20 @@
         .card-text {
             font-size: 1rem;
             color: $black;
+        }
+        &:hover {
+            @extend %shadow-hover;
+            background: $white;
+            h5,
+            .card-text p {
+                font-size: 1.5em;
+            }
+            .card-img-top-link {
+                height: 100px;
+            }
+            .card-img-top {
+                transform: scale(1.5) rotate(2deg);
+            }
         }
     }
 }

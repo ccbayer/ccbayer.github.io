@@ -2,7 +2,11 @@
     <ol class="breadcrumb">
       {% if page.id %}
         <li class="breadcrumb-item"><a href="/">Home</a></li>
+        {% if page.collection == 'posts' %}
         <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        {% else %}
+        <li class="breadcrumb-item"><a href="/{{ page.collection }}">{{ page.collection | capitalize }}</a></li>
+        {% endif %}
         <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
       {% else %}
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}

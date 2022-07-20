@@ -32,8 +32,12 @@ defaults:
 
 # collections
 collections:
-  - projects
-  - posts
+  sandbox:
+    output: true
+    permalink: :collection/:title
+  projects:
+    output: true
+    permalink: :collection/:title
 
 # permalink settings
 permalink: /blog/:year/:month/:day/:title
