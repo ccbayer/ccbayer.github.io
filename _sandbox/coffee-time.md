@@ -33,7 +33,7 @@ blog: 2022/07/16/coffee-time
     <hr>
     <div class="form-group">
         <label for="method">How you brewing?</label>
-        <select name="method" id="method" type="number" class="form-control" x-model="currentRatio" x-on:change="recalcAmts">
+        <select name="method" id="method" type="number" class="form-control" x-model="currentRatio" x-on:change="setRatio">
             <option value="15.13">Pourover (15.13:1 ratio)</option>
             <option value="12">French Press (12:1 ratio)</option>
         </select>
@@ -54,6 +54,10 @@ blog: 2022/07/16/coffee-time
             water: 0,
             currentRatio: 0,
             units: 'm',
+            setRatio(e) {
+                this.currentRatio = e.target.value;
+                this.recalcAmts();
+            },
             recalcAmts(r = this.currentRatio) {
                 this.water = (this.coffee * r).toFixed(0);
             },

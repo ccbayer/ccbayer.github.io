@@ -19,7 +19,7 @@ On weekends I might have less - only 30g, which comes out to 454g of water.  30g
 
 But there are times when I want less or more coffee, or times where I don't have enough to make 30g. Or I might use a [fancy French Press I received as a gift](https://www.espro.com/products/coffee-french-press-p7?variant=40619332829363), which has a different ratio altogether.
 
-So to faciliate my occasional tweaking, [I build a coffee calculator using JS](/sandbox/coffee-time).  This was a pretty easy project, since it's just simple math, but it sure beats having to whip out my calculator app every time I change my ratio.
+So to faciliate my occasional tweaking, [I built a coffee calculator using JS](/sandbox/coffee-time).  This was a pretty easy project, since it's just simple math, but it sure beats having to whip out my calculator app every time I change my ratio.
 
 
 I wanted to add some ability to modify the strength of the coffee. Now, I am no super nerd when it comes to this stuff - <a href="https://coffeeshophub.com/why-is-my-coffee-strong-or-weak/" target="_blank">if you want to dig in deeper, please do elsewhere</a> - so all my modifier does is change the ratio up or down by 10%.  It does not take into account the size of the grind, the method of brewing, or the length of brewing. All of those factors will also impact the relative "strength" of your coffee, not simply the water to coffee ratio!
