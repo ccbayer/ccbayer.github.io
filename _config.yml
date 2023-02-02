@@ -74,6 +74,11 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .ruby-gemset
+  - .ruby-version
+  - Makefile
+  - README.md
+  - vendor/
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
