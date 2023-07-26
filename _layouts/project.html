@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    {% include site-header-bp.html %}
+<main>
+	<div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="heading-2">{{page.title}}</h1>
+            </div>
+        </div>
+  </div>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                here is info
+            </div>
+            <div class="col-md-6">
+              <h3 class="heading-3">Project Details</h3>
+              <ul>
+                <li>
+                    Tech Stack:
+                    <ul>
+                      <li>Platform: NextJS</li>
+                      <li>CMS: Contentful</li>
+                      <li>Integrations: Custom SFDC / Mulesoft API integrations</li>
+                      <li>Frameworks / Languages: Tailwind, TypeScript</li>
+                    </ul>
+                </li>
+                <li>My Role:
+                  <ul>
+                    <li>Tech Lead</li>
+                    <li>FE Architect</li>
+                  </ul>
+                </li>
+              </ul>
+              <hr/>
+              <a href="https://connect.clearchoice.com" target="_blank">Visit Site</a>
+            </div>
+        </div>
+	</div> 
+</main>
+{% include footer.html %}
+</body>
+</html>

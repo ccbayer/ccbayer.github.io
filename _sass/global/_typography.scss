@@ -1,5 +1,7 @@
 h1,
-h2 {
+.h1,
+h2,
+.h2 {
 	@include rosewood();
 	color: $headline-color;
 }
@@ -30,6 +32,13 @@ h1 {
 		width: 4rem;
 		border-top: 4px solid $primary-400;
 	}
+}
+
+.heading-3 {
+  font-size: 1.025rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 h2 {
