@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body>
+<body x-data="modal" @keydown.escape="showModal = false">
     {% include site-header-bp.html %}
-<main>
-	<div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="heading-2">{{page.title}}</h1>
-            </div>
+<main class="project project-{{page.slug}}">
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="heading-2">{{page.title}}</h1>
         </div>
+    </div>
   </div>
   <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-              {{ content }}
-            </div>
-            {% if page.showdetails == true %}
-            <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-5">
+          {{ content }}
+        </div>
+        {% if page.showdetails == true %}
+        <div class="col-md-6 offset-md-1">
+          <div class="sidebar-sticky">
+            <div class="project-details">
               <h3 class="heading-3">Project Details</h3>
               <ul>
                 {% if page.techstack != null %}
@@ -40,15 +42,49 @@
                   {% endif %}
                 </li>
               </ul>
-              {% if page.link != null %}
-              <hr/>
-              <a href="{{ page.link }}" target="_blank">Visit Project</a>
-              {% endif %}
             </div>
+            {% if page.gallery %}
+            <hr/>
+              {% include widget-gallery.html %}
             {% endif %}
+            {% if page.link != null %}
+            <hr/>
+            <a href="{{ page.link }}" target="_blank">
+              Visit Project
+              <img src="/images/arrow-up-right.svg" alt="" width="15"/>
+            </a>
+            {% endif %}
+          </div>
+          {% endif %}
         </div>
-	</div> 
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include back-to-all-projects.html %}
+      </div>
+    </div>
+  </div>
 </main>
 {% include footer.html %}
+<div class="gallery-modal" x-show="showModal">
+  <div class="inner-modal">
+    <button @click="showModal = false">Close Modal</button>
+    <img src="" x-bind:src="activeImg" alt=""/>
+  </div>
+</div>
+<script>
+  window.modal = function () {
+    return {
+      showModal: false,
+      activeImg: '',
+      handleClick(e) {
+        this.showModal = true;
+        this.activeImg = e.target.src;
+      }
+    }
+  };
+</script>
 </body>
 </html>

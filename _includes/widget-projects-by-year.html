@@ -28,7 +28,11 @@
           <li>
               <i class="fas fa-caret-right"></i>
               {% if project.active %}
-              <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+                {% if project.showdetails %}
+                  <a href="{{ project.slug }}">Read About {{ project.title }}</a>
+                {% else %}
+                  <a href="{{ project.slug }}" target="_blank">Visit {{ project.title }}</a>
+                {% endif %}
               {% else %}
                 {{ project.title }}
               {% endif %}

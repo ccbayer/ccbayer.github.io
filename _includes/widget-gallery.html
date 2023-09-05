@@ -1,0 +1,9 @@
+<section class="portfolio-gallery">
+  <div class="gallery">
+    {% for img in page.gallery %}
+    <div class="tile">
+      <img src="{{ img }}" alt="" @click="handleClick" @keydown.enter ="handleClick" tabindex="0"/>
+    </div>
+    {% endfor %}
+  </div>
+</section>
