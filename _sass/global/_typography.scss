@@ -1,41 +1,45 @@
+body {
+  font-family: $font-family-base;
+}
+
 h1,
 .h1,
 h2,
 .h2 {
-	@include rosewood();
-	color: $headline-color;
+  @include rosewood();
+  color: $headline-color;
 }
 
 p {
-	color: $font-color;
-	font-weight: 100;
+  color: $font-color;
+  font-weight: 100;
 }
 
 ul li {
-	font-weight: 100;
+  font-weight: 100;
 }
 
 .display-1 {
-	@include media-breakpoint-down(md) {
-		font-size: 3rem;
-	}
+  @include media-breakpoint-down(md) {
+    font-size: 3rem;
+  }
 }
 
 h1 {
-	letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .heading-2 {
-	font-size: 2rem;
-	color: $headline-color;
-	padding: 2rem 0;
-	&:after {
-		content: "";
-		display: block;
-		margin-top: 1rem;
-		width: 4rem;
-		border-top: 4px solid $primary-400;
-	}
+  font-size: 2rem;
+  color: $headline-color;
+  padding: 2rem 0;
+  &:after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    width: 4rem;
+    border-top: 4px solid $primary-400;
+  }
 }
 
 .heading-3 {
@@ -46,5 +50,5 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }

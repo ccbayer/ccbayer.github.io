@@ -1,31 +1,52 @@
 .pagination {
-    margin-top: 2rem;
-    @extend %orange-border;
-    .sidebar & {
-        @extend %shadow;
+  margin-top: 2rem;
+  @extend %orange-border;
+  .sidebar & {
+    @extend %shadow;
+  }
+  padding: 0.75rem 1rem;
+  strong {
+    color: $gray-100-hsla;
+    font-weight: 400;
+  }
+  a {
+    font-weight: 100;
+  }
+  .page-item {
+    color: $gray-100-hsla;
+    font-weight: 400;
+    &.disabled {
+      a {
+        color: $mid-gray;
+        text-decoration: none;
+        cursor: none;
+        border: none;
+        &:hover {
+          color: $mid-gray;
+          text-decoration: none;
+        }
+      }
     }
-    padding: .75rem 1rem;
+  }
+}
+
+// USED IN SIDEBAR
+.widget.pagination {
+  .page-navigation {
+    width: 100%;
     strong {
-        color: $gray-100-hsla;
-        font-weight: 400;
+      display: block;
     }
     a {
-        font-weight: 100;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 80%;
+      width: auto;
+      text-overflow: ellipsis;
+      display: inline-block;
     }
-    .page-item {
-        color: $gray-100-hsla;
-        font-weight: 400;
-        &.disabled {
-            a {
-                color: $mid-gray;
-                text-decoration: none;
-                cursor: none;
-                border: none;
-                &:hover {
-                    color: $mid-gray;
-                    text-decoration: none;
-                }
-            }
-        }
+    strong + a {
+      margin-bottom: 8px;
     }
+  }
 }
