@@ -1,13 +1,37 @@
+{% assign client = site.data.clients | where: "name", page.client | first %}
+{% assign accentColor = client.accentcolor | default: "#FFFFFF" %}
+{% assign backgroundColor = client.bgcolor | default: "#FFFFFF" %}
+{% assign logoName = project.logo | default: client.name | downcase | replace: " ", "-" %}
+{% assign pattern = client.name | downcase | replace: " ", "-" %}
+{% if client.format %}
+  {% assign logoFullName = logoName | append: client.format %}
+{% else %}
+  {% assign logoFullName = logoName | append: ".svg" %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+<style>
+  :root {
+    --accent: {{accentColor}};
+  }
+</style>
 <body x-data="modal" @keydown.escape="showModal = false">
     {% include site-header-bp.html %}
 <main class="project project-{{page.slug}}">
+  <div class="project-pattern" style="background-image: url('/images/portfolio/{{pattern}}/pattern.png')">&nbsp;</div>
   <div class="container">
     <div class="row">
-        <div class="col">
-            <h1 class="heading-2">{{page.title}}</h1>
+        <div class="col-md-5">
+            <h1 class="heading-2">{{client.name}}: {{page.title}}</h1>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="client-logo">
+            <div class="img-wrap" style="background-color: {{ backgroundColor }};">
+              <img src="/images/logos/{{ logoFullName }}" alt="">
+            </div>
+          </div>
         </div>
     </div>
   </div>

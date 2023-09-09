@@ -31,7 +31,7 @@
                 {% if project.showdetails %}
                   <a href="{{ project.slug }}">Read About {{ project.title }}</a>
                 {% else %}
-                  <a href="{{ project.slug }}" target="_blank">Visit {{ project.title }}</a>
+                  <a href="{{ project.site }}" target="_blank">Visit {{ project.title }}</a>
                 {% endif %}
               {% else %}
                 {{ project.title }}

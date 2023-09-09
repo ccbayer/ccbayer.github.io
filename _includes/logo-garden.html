@@ -1,0 +1,33 @@
+{% assign projectsByDate = site.projects | sort: "date" | reverse %}
+<section class="logo-garden my-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-3">Select Project List</h2>
+      <p class="mb-3">Some of the clients and projects I have worked with over the years.</p>
+      <div class="logo-grid">
+        {% for project in projectsByDate %}
+          {% assign client = site.data.clients | where: "name", project.client | first %}
+          {% assign backgroundColor = client.bgcolor | default: "#FFFFFF" %}
+          {% assign logoName = project.logo | default: client.name | downcase | replace: " ", "-" %}
+          {% if client.format %}
+            {% assign logoFullName = logoName | append: client.format %}
+          {% else %}
+            {% assign logoFullName = logoName | append: ".svg" %}
+          {% endif %}
+          <figure class="logo">
+            {% if project.showdetails %}
+              <a href="{{ project.slug }}" class="img-wrap" style="background-color: {{ backgroundColor }}">
+                <img src="/images/logos/{{ logoFullName }}" alt="">
+              </a>
+            {% else %}
+              <a href="{{ project.link }}" class="img-wrap" style="background-color: {{ backgroundColor }}" target="_blank">
+                <img src="/images/logos/{{ logoFullName }}" alt="">
+              </a>
+            {% endif %}
+            <figcaption><strong>{{ client.name }}</strong>{{ project.title }}</figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

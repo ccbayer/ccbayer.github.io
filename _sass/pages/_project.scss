@@ -1,26 +1,37 @@
 main.project {
-  &::before {
-    content: "";
-    width: 100%;
-    height: 81px;
+  position: relative;
+  .project-pattern {
+    display: block;
     position: absolute;
-    top: 58px;
+    top: -80px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--accent);
+    background-size: 134px 156px;
+    background-position: 50%;
   }
-  &.project-clearchoice {
-    border-top: 4px solid #133057;
-    &::before {
-      display: block;
-      background-color: #133057;
-      background-image: url('/images/portfolio/clearchoice/cc-hex-pattern.png');
-      background-size: 134px 156px;
-      background-position: 50%;
+  .client-logo {
+    padding: 2rem 0;
+    .img-wrap {
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      img {
+        display: block;
+        margin: 0 auto;
+        max-height: 80px;
+        max-width: 150px;
+        object-fit: contain;
+      }
     }
   }
   .project-details {
     > ul {
       border-radius: 1rem;
       background-color: $primary-900;
-      box-shadow: inset 0 4px 5px rgba(0, 0, 0, .2);
+      box-shadow: inset 0 4px 5px rgba(0, 0, 0, 0.2);
       padding: 1.5rem;
       color: $primary-200;
       list-style: none;

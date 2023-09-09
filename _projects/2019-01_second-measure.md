@@ -1,5 +1,6 @@
 ---
-title: Second Measure
+title: Corporate Website
+client: Bloomberg Second Measure
 layout: project
 slug: second-measure
 link: https://www.secondmeasure.com
