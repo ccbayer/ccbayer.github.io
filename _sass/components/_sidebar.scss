@@ -1,11 +1,12 @@
 .sidebar {
     padding: 20px;
-    .sidebar-sticky {
-        position: sticky;
-        top: 100px;
-    }
     .widget {
         align-items: center;
         margin: 60px 0;
     }
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 100px;
 }

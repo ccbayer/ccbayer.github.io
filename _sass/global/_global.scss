@@ -1,43 +1,54 @@
-html, button, input, select, textarea { font-family: $font-family; }
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $font-family;
+}
 strong,
 a {
-	color: $primary-200-hex;
+  color: $primary-200-hex;
 }
 
 a {
-	text-decoration: none;
-	border-bottom: 1px dotted $orange;
-	&:hover,
-	&:focus {
-		text-decoration: none;
-		color: $blue;
-		border-bottom-color: $blue;
-	}
-	&.no-border {
-		border: none !important;
-	}
+  text-decoration: none;
+  border-bottom: 1px dotted $orange;
+  &:focus {
+    color: $primary-100;
+    background-color: $primary-700;
+    outline: 1px solid $primary-600;
+    outline-offset: 4px;
+    border-bottom: 0;
+  }
+  &:hover {
+    background: $primary-100;
+    color: $primary-900;
+  }
+  &.no-border {
+    border: none !important;
+  }
 }
 
 
 main {
-	margin-top: 80px;
-	padding-bottom: 80px;
+  margin-top: 80px;
+  padding-bottom: 80px;
 }
 
 body {
-	background: $body-bg;
+  background: $body-bg;
 }
 
 code,
 pre {
-	background-color: $gray-100-hsla;
-	color: $highlight-green;
-	padding: .25rem;
-	&.highlighter-rouge {
-		color: $highlight-pink;
-	}
+  background-color: $gray-100-hsla;
+  color: $highlight-green;
+  padding: 0.25rem;
+  &.highlighter-rouge {
+    color: $highlight-pink;
+  }
 }
 
 pre {
-	padding: .5rem;
+  padding: 0.5rem;
 }

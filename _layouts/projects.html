@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-<body>
+  {% include head.html %}
+  <body>
     {% include site-header-bp.html %}
-<main>
-	<div class="container">
+    <main>
+      <div class="container">
         <div class="row">
-            <div class="col">
-                <h1 class="heading-2">{{page.title}}</h1>
-            </div>
+          <div class="col">
+            <h1 class="heading-2">{{page.title}}</h1>
+          </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
-                {{ content }}
-            </div>
+          <div class="col-md-8">{{ content }}</div>
         </div>
-        <div class="row">
-            {% include widget-projects-by-year.html %}
-        </div>
-	</div> 
-</main>
-{% include footer.html %}
-</body>
+        {% include logo-garden.html %}
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
 </html>

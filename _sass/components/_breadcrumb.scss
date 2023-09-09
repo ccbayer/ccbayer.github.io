@@ -1,24 +1,22 @@
 .breadcrumb {
-    background: transparent;
-    border-radius: 0;
-    padding-bottom: 0;
-    padding-top: 1rem;
-    .breadcrumb-item {
-        font-weight: 400;
-        color: $primary-200;
-        a {
-            font-weight: 300;
-            color: $primary-200;
-            border-bottom-color: $primary-200;
-            &:hover {
-                color: $blue;
-                border-bottom-color: $blue;
-            }
-        }
+  background: transparent;
+  border-radius: 0;
+  padding-bottom: 0;
+  padding-top: 1rem;
+  .breadcrumb-item {
+    font-weight: 400;
+    color: $primary-200;
+    a {
+      font-weight: 300;
+      color: $primary-200;
+      border-bottom-color: $primary-200;
+      &:hover {
+        color: $primary-900;
+      }
     }
-    .breadcrumb-item + .breadcrumb-item::before {
-        color: $primary-300;
-        font-weight: 100;
-    }
-    
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: $primary-300;
+    font-weight: 100;
+  }
 }

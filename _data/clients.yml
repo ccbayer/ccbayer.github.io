@@ -1,0 +1,27 @@
+- name: American Express
+  bgcolor: "#006fcf"
+- name: Bloomberg Second Measure
+  bgcolor: "#08192d"
+- name: ClearChoice
+  accentcolor: "#133057"
+- name: Capital One
+- name: El Monterey
+  format: ".webp"
+- name: Formica
+- name: Fujitsu
+- name: HHKB Realforce
+- name: Hero Digital
+  bgcolor: "#0E3449"
+- name: Indigo Health
+  bgcolor: "#105860"
+  accentcolor: "#29B79D"
+- name: Kokua
+  format: ".jpg"
+- name: Pharmavite
+- name: SafeBuilt
+- name: Suzuki
+- name: Sentient Jet
+- name: Universal Orlando Resorts
+  bgcolor: "#0368d9"
+- name: VMWare
+- name: Zendrive

@@ -4,8 +4,10 @@
 	background-image: url('/images/topography.svg');
 	border-bottom: 3px solid $primary-400;
 	position: relative;
+	z-index: 10;
 	.logo { 
 		position: absolute;
+		background-color: transparent !important;
 	}
 	nav {
 		margin-left: 88px;
