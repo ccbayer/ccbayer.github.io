@@ -3,7 +3,9 @@
 - name: Bloomberg Second Measure
   bgcolor: "#08192d"
 - name: ClearChoice
+  bgcolor: "#133057"
   accentcolor: "#133057"
+  foregroundcolor: "#FFFFFF"
 - name: Capital One
 - name: El Monterey
   format: ".webp"

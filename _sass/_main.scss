@@ -13,25 +13,26 @@
 
 // layout
 @import 'components/breadcrumb';
-@import 'components/list-group';
 @import 'components/cards';
 @import 'components/carousel';
+@import 'components/featured-projects';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/jumbotron';
+@import 'components/list-group';
+@import 'components/logo-grid';
 @import 'components/nav';
 @import 'components/pagination';
 @import 'components/panel';
 @import 'components/sidebar';
 @import 'components/site-header';
-@import 'components/logo-grid';
 
 // widgets
-@import 'components/widget-base';
 @import 'components/widget-author';
-@import 'components/widget-tag-list';
+@import 'components/widget-base';
 @import 'components/widget-date-list';
 @import 'components/widget-gallery';
+@import 'components/widget-tag-list';
 
 // pages
 @import 'pages/default';

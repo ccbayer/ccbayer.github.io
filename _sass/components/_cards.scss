@@ -1,68 +1,68 @@
 .card {
-    // general cards
-    
-    // post cards
-    &.post-card {
-        @extend %shadow-inset;
-        transition: all 0.3s ease-in-out;
-        border: none;
-        background: $grey-900-hsla;
-        height: 100%;
-        cursor: pointer;
-        .card-img-top-link {
-            border-top-left-radius: .25rem;
-            border-top-right-radius: .25rem;
-            height: 140px;
-            width: 100%;
-            display: block;
-            background-repeat: repeat;
-            overflow: hidden;
-            border-bottom: 0;
-            transition: height 0.3s ease-in-out;
-        }
-        h5,
-        .card-text p {
-            transition: all 0.3s ease-in-out;
-        }
-        .card-img-top {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-            transition: all 0.3s ease-in-out;
-            a {
-                border: none;
-            }
-            &.default {
-                object-fit: fill;
-            }
-        }
-        .card-title {
-            small {
-                display: block;
-                font-weight: 100;
-                font-size: 1rem;
-                margin-bottom: .5rem;
-            }
-            margin-bottom: 1rem;
-        }
-        .card-text {
-            font-size: 1rem;
-            color: $black;
-        }
-        &:hover {
-            @extend %shadow-hover;
-            background: $white;
-            h5,
-            .card-text p {
-                font-size: 1.5em;
-            }
-            .card-img-top-link {
-                height: 100px;
-            }
-            .card-img-top {
-                transform: scale(1.5) rotate(2deg);
-            }
-        }
+  // general cards
+
+  // post cards
+  &.post-card {
+    @include shadow-inset;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    background: $grey-900-hsla;
+    height: 100%;
+    cursor: pointer;
+    .card-img-top-link {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      height: 140px;
+      width: 100%;
+      display: block;
+      background-repeat: repeat;
+      overflow: hidden;
+      border-bottom: 0;
+      transition: height 0.3s ease-in-out;
     }
+    h5,
+    .card-text p {
+      transition: all 0.3s ease-in-out;
+    }
+    .card-img-top {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.3s ease-in-out;
+      a {
+        border: none;
+      }
+      &.default {
+        object-fit: fill;
+      }
+    }
+    .card-title {
+      small {
+        display: block;
+        font-weight: 100;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      margin-bottom: 1rem;
+    }
+    .card-text {
+      font-size: 1rem;
+      color: $black;
+    }
+    &:hover {
+      @include shadow-hover;
+      background: $white;
+      h5,
+      .card-text p {
+        font-size: 1.5em;
+      }
+      .card-img-top-link {
+        height: 100px;
+      }
+      .card-img-top {
+        transform: scale(1.5) rotate(2deg);
+      }
+    }
+  }
 }
