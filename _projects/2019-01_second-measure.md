@@ -1,18 +1,20 @@
 ---
-title: Corporate Website
-client: Bloomberg Second Measure
-layout: project
-slug: second-measure
-link: https://www.secondmeasure.com
-description: Custom WordPress template for a data-analytics firm.
-date: 2019-06-01 12:00:00 -0700
 active: true
+client: Bloomberg Second Measure
+date: 2019-06-01 12:00:00 -0700
+description: Custom WordPress template for a data-analytics firm.
+featured: true
+layout: project
+link: https://www.secondmeasure.com
+roles:
+  - Front-End Architect
+  - Tech Lead
 showdetails: true
+sidebar: false
+slug: second-measure
 techstack:
   - "<strong>CMS</strong>: WordPress"
-roles: 
-  - Tech Lead
-  - Front-End Architect
+title: Corporate Website
 ---
 
-Second Measure is amazing
+Project details coming soon!

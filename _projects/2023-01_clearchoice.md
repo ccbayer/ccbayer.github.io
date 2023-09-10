@@ -1,23 +1,24 @@
 ---
-layout: project
-sidebar: false
-title: Patient Portal
-slug: clearchoice
-client: ClearChoice
-link: https://connect.clearchoice.com
-description: A portal with a logged-in experience. Headless CMS (contentful) with NextJS front end.
-date: 2023-02-01 12:00:00 -0700
 active: true
-showdetails: true
-techstack:
-  - "<strong>Platform</strong>: NextJS"
-  - "<strong>CMS</strong>: Contentful"
-  - "<strong>Integrations</strong>: Custom SFDC / Mulesoft API integrations"
-  - "<strong>Frameworks / Languages</strong>: React, Tailwind, TypeScript"
-roles: 
-  - Tech Lead
-  - Front-End Architect
+client: ClearChoice
+date: 2023-02-01 12:00:00 -0700
+description: A portal with a logged-in experience. Headless CMS (contentful) with NextJS front end.
+featured: true
 gallery: ['/images/portfolio/clearchoice/home.png', '/images/portfolio/clearchoice/treatment-path.png', '/images/portfolio/clearchoice/messages.png', '/images/portfolio/clearchoice/profile.png', '/images/portfolio/clearchoice/location-detail.png']
+layout: project
+link: https://connect.clearchoice.com
+roles: 
+  - Front-End Architect
+  - Tech Lead
+showdetails: true
+sidebar: false
+slug: clearchoice
+techstack:
+  - "<strong>CMS</strong>: Contentful"
+  - "<strong>Frameworks / Languages</strong>: React, Tailwind, TypeScript"
+  - "<strong>Integrations</strong>: Custom SFDC / Mulesoft API integrations"
+  - "<strong>Platform</strong>: NextJS"
+title: Patient Portal
 ---
 
 ## Overview

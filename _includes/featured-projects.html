@@ -1,0 +1,38 @@
+{% assign featuredProjects = site.projects | where: "featured", true | sort: "date" | reverse %}
+<section class="featured-project-list my-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-3">Featured Projects</h2>
+      <div class="featured-projects">
+        {% for project in featuredProjects %}
+          {% assign client = site.data.clients | where: "name", project.client | first %}
+          {% assign logoName = project.logo | default: client.name | downcase | replace: " ", "-" %}
+          {% assign foregroundColor = client.foregroundcolor | default: "#FFFFFF" %}
+          {% if client.format %}
+            {% assign logoFullName = logoName | append: client.format %}
+          {% else %}
+            {% assign logoFullName = logoName | append: ".svg" %}
+          {% endif %}
+          <style>
+              #featured-project-{{project.slug}} {
+                --bgColor: {{ client.bgcolor }};
+                --foregroundColor: {{ foregroundColor }}
+              }
+          </style>
+          <a href="/projects/{{ project.slug }}"class="featured-project" id="featured-project-{{ project.slug }}">
+            <figure>
+              <div class="img-container">
+                <img src="/images/portfolio/{{ project.slug }}/thumb-large.jpg" alt="" />
+              </div>
+              <figcaption>
+                <img src="/images/logos/{{ logoFullName }}" alt="" class="logo">
+                <h3>{{ client.name }}: {{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+              </figcaption>
+            </figure>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
