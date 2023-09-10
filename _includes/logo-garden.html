@@ -16,7 +16,7 @@
           {% endif %}
           <figure class="logo">
             {% if project.showdetails %}
-              <a href="{{ project.slug }}" class="img-wrap" style="background-color: {{ backgroundColor }}">
+              <a href="/projects/{{ project.slug }}" class="img-wrap" style="background-color: {{ backgroundColor }}">
                 <img src="/images/logos/{{ logoFullName }}" alt="">
               </a>
             {% else %}
