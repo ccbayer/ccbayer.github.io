@@ -1,0 +1,50 @@
+---
+title: Resume
+layout: resume
+sections:
+ - statement
+ - experience
+ - skills
+ - education
+---
+
+<section id="statement" x-show="activeSection === 'statement' || activeSection === 'all'">
+  <h2>Personal Statement</h2>
+  <p>While my skills are primarily in technology, I consider myself a digital marketer with a technological focus.  My contributions to the workplace goes beyond the code that makes digital products run.</p>
+  <p>Collaboration is the soul of the workplace, and I thrive when given opportunities to work with people across discipline.  A functional workplace requires collaboration, and all voices to be heard.  This is not only to ensure the project is done on time and on budget, but to also consider viewpoints and perspectives that a smaller group may not have seen.</p>
+  <p>I have lead departments of technologists, ranging from very experienced to their first job in the industry. My hope for the folks who work with me is that they learn how to be better developers, strategic thinkers, and always keep the user in mind.</p>
+</section>
+
+<section id="experience" x-show="activeSection === 'experience' || activeSection === 'all'">
+  <h2>Work Experience</h2>
+  {% for experience in site.data.experience %}
+  <article class="experience">
+    <h3>
+      <strong>{{ experience.title }}</strong> &middot; <a href="{{ experience.url }}" target="_blank">{{ experience.company }}</a>
+      <em>{{ experience.locationIcon }} {{ experience.location }} &middot; {{ experience.startDate }} &mdash; {{ experience.endDate }}</em>
+    </h3>
+    {% if experience.previousTitles %}
+    <h4>Previous Titles Held:</h4>
+      <ul>
+        {% for prevTitle in experience.previousTitles %}
+        <li>{{ prevTitle }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <small>{{ experience.notes }}</small>
+  </article>
+  {% endfor %}
+</section>
+
+<section id="skills" x-show="activeSection === 'skills' || activeSection === 'all'">
+  <h2>Skills</h2>
+  <p>I've picked up a lot over the years, but these are the most relevant to my day-to-day.</p>
+  <h3>Technical Skills</h3>
+  <h3>Other</h3>
+</section>
+
+<section id="education" x-show="activeSection === 'education' || activeSection === 'all'">
+  <h2>Education & Qualifications</h2>
+  <h3>Education</h3>
+  <h3>Qualifications & Certificates</h3>
+</section>

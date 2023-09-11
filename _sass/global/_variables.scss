@@ -1,6 +1,6 @@
 // colors
 $white: #fffdfa;
-$black: #3c3c3c; 
+$black: #3c3c3c;
 $light-gray: #e3e3e3;
 $mid-gray: #999;
 $dark-gray: #666;
@@ -9,14 +9,14 @@ $blue: #0056b3;
 $body-bg: $white;
 
 /* brand colors */
-/* primary */ 
+/* primary */
 
 $primary-100-hex: #57312D;
 $primary-100-hsla: hsla(6, 32%, 26%, 1);
 
 $primary-200-hex: #AB370A;
 $primary-200-hsla: hsla(17, 89%, 35%, 1);
-$primary-300-hex: #D64D17; 
+$primary-300-hex: #D64D17;
 $primary-300-hsla: hsla(17, 80%, 46%, 1);
 
 $primary-400-hex: #D06237;
@@ -53,8 +53,15 @@ $gray-100-hsla: hsla(17, 15%, 16%, 1);
 $gray-300-hsla: hsla(17, 10%, 15%, 1);
 $gray-400-hsla: hsla(17, 7%, 20%, 1);
 $gray-500-hsla: hsla(17, 5%, 40%, 1);
-$grey-700-hsla: hsla(17, 24%, 85%, 1);
-$grey-900-hsla: hsla(17, 24%, 97%, 1);
+$gray-700-hsla: hsla(17, 24%, 85%, 1);
+$gray-900-hsla: hsla(17, 24%, 97%, 1);
+
+$neutral-100: $gray-100-hsla;
+$neutral-300: $gray-300-hsla;
+$neutral-400: $gray-400-hsla;
+$neutral-500: $gray-500-hsla;
+$neutral-700: $gray-700-hsla;
+$neutral-900: $gray-900-hsla;
 
 // highlights
 $highlight-green: hsla(69, 100%, 40%, 1);

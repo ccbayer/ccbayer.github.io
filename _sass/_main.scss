@@ -26,6 +26,8 @@
 @import 'components/panel';
 @import 'components/sidebar';
 @import 'components/site-header';
+@import 'components/resume/experience';
+
 
 // widgets
 @import 'components/widget-author';
@@ -36,6 +38,7 @@
 
 // pages
 @import 'pages/default';
+@import 'pages/resume';
 @import 'pages/post';
 @import 'pages/portfolio';
 @import 'pages/project';

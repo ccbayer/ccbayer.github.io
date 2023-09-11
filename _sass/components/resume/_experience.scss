@@ -1,0 +1,31 @@
+.page-resume {
+  article {
+    border-bottom: 2px solid $neutral-700;
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+    h3 {
+      font-weight: 400;
+      font-size: 1.25rem;
+      strong {
+        color: $primary-500;
+      }
+      em {
+        color: $neutral-500;
+        display: block;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        padding: 0.5rem 0;
+        text-transform: uppercase;
+      }
+    }
+    h4 {
+      color: $neutral-300;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    small {
+      font-style: italic;
+    }
+  }
+}
