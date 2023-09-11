@@ -9,7 +9,7 @@ body.page-post {
                 margin: 1.5rem 0;
             }
             h2 {
-                color: $gray-300-hsla;
+                color: $neutral-300;
                 font-size: 1.75rem;
                 font-weight: 300;
                 &::after {
@@ -22,7 +22,7 @@ body.page-post {
                 }
             }
             h3 {
-                color: $gray-300-hsla;
+                color: $neutral-300;
                 font-size: 1.5rem;
                 font-weight: 100;
             }
@@ -50,7 +50,7 @@ body.page-post {
             font-weight: 100;
             font-style: italic;
             font-size: .875rem;
-            background: $gray-100-hsla;
+            background: $neutral-100;
             color: $highlight-green;
             padding: .5rem;
             a {

@@ -18,10 +18,12 @@
             {% if project.showdetails %}
               <a href="/projects/{{ project.slug }}" class="img-wrap" style="background-color: {{ backgroundColor }}">
                 <img src="/images/logos/{{ logoFullName }}" alt="">
+                <span class="sr-only">Read project details for {{ project.title }}</span>
               </a>
             {% else %}
               <a href="{{ project.link }}" class="img-wrap" style="background-color: {{ backgroundColor }}" target="_blank">
                 <img src="/images/logos/{{ logoFullName }}" alt="">
+                <span class="sr-only">Visit Live Website for {{ project.title }}</span>
               </a>
             {% endif %}
             <figcaption><strong>{{ client.name }}</strong>{{ project.title }}</figcaption>

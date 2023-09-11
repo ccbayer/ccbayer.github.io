@@ -6,6 +6,9 @@ footer {
   padding-top: 15px;
   margin-top: 15px;
   padding-bottom: 30px;
+  small {
+    color: $neutral-100;
+  }
   ul.contact.nav {
     li {
       a {

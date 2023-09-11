@@ -8,8 +8,11 @@
     @include shadow;
     margin-bottom: 2rem;
     display: flex;
-    flex: 1 0 50%;
-    max-width: calc(50% - 1rem);
+    flex: 1 0 100%;
+    @include media-breakpoint-up("md") {
+      flex: 1 0 50%;
+      max-width: calc(50% - 1rem);
+    }
     flex-wrap: wrap;
     border-radius: 2rem;
     background-color: var(--bgColor, $primary-300);

@@ -35,5 +35,5 @@
 #search:not(:placeholder-shown) + ul.suggestions {
   margin-bottom: .75rem;
   max-height: none;
-  border-bottom: 1px solid $grey-700-hsla;
+  border-bottom: 1px solid $neutral-700;
 }

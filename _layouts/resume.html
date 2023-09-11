@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="page-resume">
+    {% include site-header-bp.html %}
+    <main
+      x-data="{ activeSection: 'statement'}"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading-2">{{page.title}}</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">{{ content }}</div>
+          <div class="col-md-4">
+            <div class="sticky-top">
+              <ul class="badge-list">
+                {% for section in page.sections %}
+                  <li :class="activeSection === '{{ section }}' ? 'active' : ''">
+                    <button type="button" class="btn badge" :class="activeSection === '{{ section }}' ? 'badge-dark' : 'badge-light'" @click="activeSection = '{{ section }}'">
+                      {{ section | capitalize }}
+                    </button>
+                  </li>
+                {% endfor %}
+                <li :class="activeSection === 'all' ? 'active' : ''">
+                  <button class="btn badge" :class="activeSection === 'all' ? 'badge-dark' : 'badge-light'" @click="activeSection = 'all'">
+                    View All Sections At Once
+                  </button>
+                </li>
+              </ul>
+              <hr>
+              <a href="#" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

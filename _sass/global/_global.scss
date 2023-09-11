@@ -29,7 +29,6 @@ a {
   }
 }
 
-
 main {
   margin-top: 80px;
   padding-bottom: 80px;
@@ -41,7 +40,7 @@ body {
 
 code,
 pre {
-  background-color: $gray-100-hsla;
+  background-color: $neutral-100;
   color: $highlight-green;
   padding: 0.25rem;
   &.highlighter-rouge {
@@ -51,4 +50,48 @@ pre {
 
 pre {
   padding: 0.5rem;
+}
+
+.badge-dark {
+  background-color: $primary-200;
+  color: $primary-900;
+  &:hover {
+    background-color: $primary-200;
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+@counter-style pointer {
+  system: cyclic;
+  symbols: "\1F449";
+  suffix: " ";
+}
+
+.btn.badge-light {
+  background-color: $primary-900;
+  color: $primary-200;
+  &:hover {
+    background-color: $primary-200;
+    color: $white;
+    text-decoration: underline;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: 2px solid $primary-900;
+    outline-offset: 2px;
+  }
+}
+
+ul.badge-list {
+  list-style: none;
+  li {
+    margin-bottom: 0.75rem;
+    .btn.badge {
+      font-size: 1rem;
+    }
+  }
+  li.active {
+    list-style-type: pointer;
+  }
 }
