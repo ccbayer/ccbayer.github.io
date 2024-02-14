@@ -5,6 +5,11 @@
     {% include site-header-bp.html %}
     <main
       x-data="{ activeSection: 'statement'}"
+      x-init="() => {
+        if(window.location.hash) {
+          activeSection = window.location.hash.split('#')[1];
+        }
+      }"
     >
       <div class="container">
         <div class="row">
@@ -19,15 +24,15 @@
               <ul class="badge-list">
                 {% for section in page.sections %}
                   <li :class="activeSection === '{{ section }}' ? 'active' : ''">
-                    <button type="button" class="btn badge" :class="activeSection === '{{ section }}' ? 'badge-dark' : 'badge-light'" @click="activeSection = '{{ section }}'">
+                    <a href="#{{ section }}" role="button" class="btn badge" :class="activeSection === '{{ section }}' ? 'badge-dark' : 'badge-light'" @click="activeSection = '{{ section }}'">
                       {{ section | capitalize }}
-                    </button>
+                    </a>
                   </li>
                 {% endfor %}
                 <li :class="activeSection === 'all' ? 'active' : ''">
-                  <button class="btn badge" :class="activeSection === 'all' ? 'badge-dark' : 'badge-light'" @click="activeSection = 'all'">
+                  <a href="#all" class="btn badge" :class="activeSection === 'all' ? 'badge-dark' : 'badge-light'" @click="activeSection = 'all'">
                     View All Sections At Once
-                  </button>
+                  </a>
                 </li>
               </ul>
               <hr>
