@@ -15,26 +15,7 @@ sections:
   <p>I have lead departments of technologists, ranging from very experienced to their first job in the industry. My hope for the folks who work with me is that they learn how to be better developers, strategic thinkers, and always keep the user in mind.</p>
 </section>
 
-<section id="experience" x-show="activeSection === 'experience' || activeSection === 'all'">
-  <h2>Work Experience</h2>
-  {% for experience in site.data.experience %}
-  <article class="experience">
-    <h3>
-      <strong>{{ experience.title }}</strong> &middot; <a href="{{ experience.url }}" target="_blank">{{ experience.company }}</a>
-      <em>{{ experience.locationIcon }} {{ experience.location }} &middot; {{ experience.startDate }} &mdash; {{ experience.endDate }}</em>
-    </h3>
-    {% if experience.previousTitles %}
-    <h4>Previous Titles Held:</h4>
-      <ul>
-        {% for prevTitle in experience.previousTitles %}
-        <li>{{ prevTitle }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-    <small>{{ experience.notes }}</small>
-  </article>
-  {% endfor %}
-</section>
+{% include resume-experience.html %}
 
 <section id="skills" x-show="activeSection === 'skills' || activeSection === 'all'">
   <h2>Skills</h2>

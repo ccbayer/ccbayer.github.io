@@ -6,6 +6,11 @@
   locationIcon: "&#x2614;"
   startDate: "Jan 2021"
   endDate: "Present"
+  description: [
+    "Run a team of several front-end developers and support hiring decisions for department",
+    "Verify budgets",
+    "Continue contributing 85%+ of time to billable project work"
+  ]
 - title: "Director of Front-End Technology"
   company: "SmallTalk"
   url: "https://www.linkedin.com/company/smalltalk-agency/about/"
@@ -15,6 +20,12 @@
   startDate: "Jan 2019"
   endDate: "Dec 2020"
   notes: "SmallTalk was acquired by AMP in 2020, and we changed our name in 2021."
+  description: [
+    "Run a team of several front-end developers and support hiring decisions for department",
+    "Establish overall front-end technical standards and approach for all projects",
+    "Allocation of technical staff to projects",
+    "Develop company-wide standards for technical implementation and handoff"
+  ]
 - title: "Manager, Front-End Engineering"
   company: "Velowerks"
   url: "https://www.linkedin.com/company/velowerks/about/"
@@ -24,6 +35,11 @@
   startDate: "April 2016"
   endDate: "Jan 2019"
   notes: "VeloWerks was acquired by SmallTalk in 2019."
+  description: [
+    "HR Manager for Senior- and Mid-level developers, providing both career guidance and technical support",
+    "Project-level technical lead for Front-End",
+    "Estimate efforts for projects, and allocate staff according to needs"
+  ]
 - title: "Lead Front-End Developer"
   company: "Epsilon"
   url: "https://www.epsilon.com/us"
@@ -41,6 +57,10 @@
   startDate: "March 2012"
   endDate: "Jan 2013"
   notes: "Gyro is now known as Merckle"
+  description: [
+    "",
+    "Supported on day-to-day devops and IT responsibilities for the company"
+  ]
 - title: "Sr. Interactive Developer"
   company: "88 Brand Partners"
   url: "https://88brandpartners.com/"
@@ -49,6 +69,10 @@
   startDate: "Feb 2010"
   endDate: "March 2012"
   notes: "88 Brand Partners was known as PMG (Pratt Marketing Group) when I was hired"
+  description: [
+    "",
+    "Supported on day-to-day devops and IT responsibilities for the company"
+  ]
 - title: "Web Developer"
   company: "Visible"
   url: "https://bemorevisible.com/"
@@ -56,6 +80,10 @@
   locationIcon: "&#x1F3D9;"
   startDate: "March 2009"
   endDate: "Jan 2010"
+  description: [
+    "",
+    "Supported on day-to-day devops and IT responsibilities for the company"
+  ]
 - title: "Web Developer"
   company: "Lisa P. Maxwell"
   url: "https://www.linkedin.com/company/lisa-p.-maxwell/"
