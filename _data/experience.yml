@@ -7,9 +7,10 @@
   startDate: "Jan 2021"
   endDate: "Present"
   description: [
-    "Run a team of several front-end developers and support hiring decisions for department",
-    "Verify budgets",
-    "Continue contributing 85%+ of time to billable project work"
+    "Run a team of several front-end developers and support hiring decisions for technical department",
+    "Verify budgets vs timelines",
+    "Work closely with department heads to establish and codify processes both within the technical department and cross-discipline on everything from code style to release-cycle management",
+    "Continue contributing 85%+ of time to billable project work",
   ]
 - title: "Director of Front-End Technology"
   company: "SmallTalk"
@@ -24,7 +25,9 @@
     "Run a team of several front-end developers and support hiring decisions for department",
     "Establish overall front-end technical standards and approach for all projects",
     "Allocation of technical staff to projects",
-    "Develop company-wide standards for technical implementation and handoff"
+    "Work with Account managers to establish estimates, timelines, and overall project budgets for new and existing business",
+    "Develop company-wide standards for technical implementation and handoff",
+    "Develop new-business pitch content to sell new business with cross-discipline teams",
   ]
 - title: "Manager, Front-End Engineering"
   company: "Velowerks"
@@ -49,6 +52,10 @@
   startDate: "Feb 2013"
   endDate: "March 2016"
   notes: "Epsilon was known as SolutionSet when I was hired mid-acquisition."
+  description: [
+    "Act as lead developer on several high-profile projects",
+    "Establish "
+  ]
 - title: "Sr. Web Developer"
   company: "Gyro"
   url: "https://www.linkedin.com/company/gyrohsr/"
@@ -58,8 +65,8 @@
   endDate: "Jan 2013"
   notes: "Gyro is now known as Merckle"
   description: [
-    "",
-    "Supported on day-to-day devops and IT responsibilities for the company"
+    "Worked on PHP, WordPress, HTML email, and JS-based SPA for various B2B clients such as Ryder, VMWare, Varian",
+    "Participlated in creative pitch sessions with rest of Creative team"
   ]
 - title: "Sr. Interactive Developer"
   company: "88 Brand Partners"
@@ -70,8 +77,10 @@
   endDate: "March 2012"
   notes: "88 Brand Partners was known as PMG (Pratt Marketing Group) when I was hired"
   description: [
-    "",
-    "Supported on day-to-day devops and IT responsibilities for the company"
+    "Supported on day-to-day devops and IT responsibilities for the company",
+    "Developed PHP, HTML websites for clients such as NorthShore University System, Discover Card",
+    "Built internal employee / manager review tool",
+    "Build HTML banner ads"
   ]
 - title: "Web Developer"
   company: "Visible"
@@ -81,7 +90,7 @@
   startDate: "March 2009"
   endDate: "Jan 2010"
   description: [
-    "",
+    "Built PHP, WordPress and custom HTML websites for a variety of clients",
     "Supported on day-to-day devops and IT responsibilities for the company"
   ]
 - title: "Web Developer"
@@ -91,6 +100,12 @@
   locationIcon: "&#x1F3D9;"
   startDate: "March 2008"
   endDate: "July 2009"
+  description: [
+    "Built PHP, WordPress and custom HTML websites for a variety of clients",
+    "Built a ActionScript-based streaming chat and video website",
+    "Front-end developer on a dynamic print-ad building system",
+    "Supported on day-to-day devops and IT responsibilities for the company"
+  ]
 - title: "Web Developer and Integrator"
   company: "Infomercial.TV"
   url: "https://web.archive.org/web/20070202012752/http://www.infomercial.tv/"
@@ -98,6 +113,9 @@
   locationIcon: "&#x1F334;"
   startDate: "May 2006"
   endDate: "March 2008"
+  description: [
+    "Designed, developed and maintained campaign landing pages and full websites for direct-marketing clients"
+  ]
 - title: "Web Developer"
   company: "Big Fish"
   url: "https://www.linkedin.com/company/bigfishpr/"
@@ -105,3 +123,6 @@
   locationIcon: "&#x1F340"
   startDate: "July 2004"
   endDate: "March 2006"
+  description: [
+    "Designed and developed and maintained campaign landing pages and full websites for a variety of clients"
+  ]
