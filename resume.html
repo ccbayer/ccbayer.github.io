@@ -20,12 +20,25 @@ sections:
 <section id="skills" x-show="activeSection === 'skills' || activeSection === 'all'">
   <h2>Skills</h2>
   <p>I've picked up a lot over the years, but these are the most relevant to my day-to-day.</p>
-  <h3>Technical Skills</h3>
-  <h3>Other</h3>
+  {% include resume-skills.html %}
 </section>
 
 <section id="education" x-show="activeSection === 'education' || activeSection === 'all'">
   <h2>Education & Qualifications</h2>
   <h3>Education</h3>
+  <ul>
+    <li>
+      <strong>BS in Multimedia & Web Design</strong>
+      2005, New England Institute of Art
+    </li>
+  </ul>
   <h3>Qualifications & Certificates</h3>
+  <ul>
+    <li>
+      <strong>Sitecore Certified Developer</strong>
+    </li>
+    <li>
+      <strong>Ruby on Rails Certificate</strong>
+    </li>
+  </ul>
 </section>
