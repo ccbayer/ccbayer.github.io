@@ -17,6 +17,9 @@
 - name: Indigo Health
   bgcolor: "#105860"
   accentcolor: "#29B79D"
+- name: MCBC
+  format: ".png"
+  bgcolor: "#000000"
 - name: Kokua
   format: ".jpg"
 - name: Pharmavite
